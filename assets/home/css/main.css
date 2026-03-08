@@ -7,7 +7,7 @@ body {
 }
 
 .head {
-    width: 100%;
+    width: calc(100% - 40px);
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     padding: 20px;
