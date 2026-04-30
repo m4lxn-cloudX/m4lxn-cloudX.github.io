@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.section_type_1{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.section_type_2 {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+}

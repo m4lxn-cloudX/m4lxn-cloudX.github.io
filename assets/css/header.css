@@ -1,0 +1,97 @@
+/* Shared */
+.navbar {
+    position: fixed;
+    width: calc(100% - 40px);
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.nav_logo {
+    margin-right: auto;
+}
+
+.nav_logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.nav_item_img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Desktop: mobile navbar verstecken */
+.navbar_mobile {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    /* Desktop navbar verstecken */
+    .navbar_desktop {
+        display: none;
+    }
+
+    /* Mobile navbar zeigen */
+    .navbar_mobile {
+        display: flex;
+    }
+
+    .hamburger {
+        background: none;
+        border: none;
+        font-size: 26px;
+        cursor: pointer;
+        color: #333;
+        margin-left: auto;
+    }
+
+        .nav_links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 16px 20px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav_links.open {
+        max-height: 400px;
+        opacity: 1;
+    }
+
+    .nav_item {
+        font-size: 1em;
+        padding: 6px 0;
+        margin: 4px 0;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m1l4n10 - Mainpage</title>
+    <link rel="icon" href="https://m1l4n10.is-a.dev/images/m1l4n10githubio/favicon.png">
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+<body>
+    <!-- Desktop Navbar -->
+    <nav class="navbar navbar_desktop">
+        <div class="nav_logo">
+            <a href="/">m1l4n10</a>
+        </div>
+        <a class="nav_item" href="/">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/home.png">
+            <span>Home</span>
+        </a>
+        <a class="nav_item" href="https://m1l4n10.is-a.dev/linktree">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/socials.png">
+            <span>Socials</span>
+        </a>
+        <a class="nav_item" href="/#about">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/about.png">
+            <span>About</span>
+        </a>
+        <a class="nav_item" href="/#projects">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/projects.png">
+            <span>Projects</span>
+        </a>
+        <a class="nav_item" href="/#blog">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/blog.png">
+            <span>Blog</span>
+        </a>
+        <a class="nav_item" href="/#contact">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/contact.png">
+            <span>Contact</span>
+        </a>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav class="navbar navbar_mobile">
+        <div class="nav_logo">
+            <a href="/">m1l4n10</a>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <div class="nav_links" id="nav_links">
+            <a class="nav_item" href="/">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/home.png">
+                <span>Home</span>
+            </a>
+            <a class="nav_item" href="https://m1l4n10.is-a.dev/linktree">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/socials.png">
+                <span>Socials</span>
+            </a>
+            <a class="nav_item" href="/#about">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/about.png">
+                <span>About</span>
+            </a>
+            <a class="nav_item" href="/#projects">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/projects.png">
+                <span>Projects</span>
+            </a>
+            <a class="nav_item" href="/#blog">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/blog.png">
+                <span>Blog</span>
+            </a>
+            <a class="nav_item" href="/#contact">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/contact.png">
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="section_type_1"></section>
+        <section class="section_type_2"></section>
+        <section class="section_type_1"></section>
+        <section class="section_type_2"></section>
+        <section class="section_type_1"></section>
+    </main>
+    <footer>
+        <div class="legal">
+            <a href="/legal/index.html#privacy">Privacy Policy</a>
+            <a href="/legal/index.html#terms">Terms of Use</a>
+        </div>
+        <div class="else">
+            <a href="https://www.githubstatus.com/">Service Status</a>
+            <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Policy</a>
+            <a href="https://discord.com/users/1215682123219079259">Get Support</a>
+        </div>
+        <br>
+        <p class="copyright">&copy; 2026 <a class="" href="https://github.com/m1l4n10">m1l4n10</a> / All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav_links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+
+    // NEU
+    document.querySelectorAll('#nav_links .nav_item').forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+        });
+    });
+</script>
+</html>

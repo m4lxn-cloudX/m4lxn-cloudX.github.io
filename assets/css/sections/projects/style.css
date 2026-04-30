@@ -1,0 +1,109 @@
+.section_projects {
+    min-height: 200px;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.HeroWelcomeExtra {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.projects_content {
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project_card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    min-height: 200px;
+    width: 333px;
+}
+
+.releasedate {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.projectheading {
+    font-size: 20px;
+}
+
+.project_card_descripiton {
+
+}
+
+.project_card_descripiton a, p {
+    font-size: 18px;
+}
+
+.herobuttons_projects {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.hero_button_projects {
+    width: auto;
+    min-width: 335px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.hero_button_img_projects {
+    height: 20px;
+}
+@media (max-width: 800px) {
+    .projectheading {
+    font-size: 18px;
+}
+.HeroWelcomeExtra {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 15px;
+}
+.project_card_descripiton a, p {
+    font-size: 15px;
+}
+.hero_button_projects {
+    min-width: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+}
+}

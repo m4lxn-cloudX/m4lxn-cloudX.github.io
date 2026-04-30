@@ -1,46 +1,267 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/logos/favicon.webp">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>404: This page could not be found</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E9SPPVJFL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-2E9SPPVJFL');
-    </script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-    </style>
+    <title>m1l4n10 - Mainpage</title>
+    <link rel="icon" href="https://m1l4n10.is-a.dev/images/general/pp.jpeg">
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/sections/Home/style.css">
+    <link rel="stylesheet" href="/assets/css/sections/about/style.css">
+    <link rel="stylesheet" href="/assets/css/sections/projects/style.css">
+    <link rel="stylesheet" href="/assets/css/sections/blog/style.css">
+    <link rel="stylesheet" href="/assets/css/sections/contact/style.css">
 </head>
-<body class="bg-black text-white antialiased overflow-hidden">
-    <div class="flex flex-col items-center justify-center min-h-screen px-4 text-center overflow-hidden">
-        <div class="flex items-center overflow-hidden">
-            <h1 class="inline-block border-r border-white/30 pr-6 mr-5 text-2xl font-medium leading-[49px]">
-                LAUNCH ON 04/30/2026 at 2:14pm OMGGGG!!!!!
-            </h1>
-            <div class="inline-block text-left overflow-hidden">
-                <h2 class="text-sm font-normal leading-[49px] m-0 p-0">
-                    READY THE F UP!!!!
-                </h2>
+<body>
+    <!-- Desktop Navbar -->
+    <nav class="navbar navbar_desktop">
+        <div class="nav_logo">
+            <a href="/">m1l4n10</a>
+        </div>
+        <a class="nav_item" href="/">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/home.png">
+            <span>Home</span>
+        </a>
+        <a class="nav_item" href="https://m1l4n10.is-a.dev/linktree">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/socials.png">
+            <span>Socials</span>
+        </a>
+        <a class="nav_item" href="/#about">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/about.png">
+            <span>About</span>
+        </a>
+        <a class="nav_item" href="/#projects">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/projects.png">
+            <span>Projects</span>
+        </a>
+        <a class="nav_item" href="/#blog">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/blog.png">
+            <span>Blog</span>
+        </a>
+        <a class="nav_item" href="/#contact">
+            <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/contact.png">
+            <span>Contact</span>
+        </a>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav class="navbar navbar_mobile">
+        <div class="nav_logo">
+            <a href="/">m1l4n10</a>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <div class="nav_links" id="nav_links">
+            <a class="nav_item" href="/">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/home.png">
+                <span>Home</span>
+            </a>
+            <a class="nav_item" href="https://m1l4n10.is-a.dev/linktree">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/socials.png">
+                <span>Socials</span>
+            </a>
+            <a class="nav_item" href="/#about">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/about.png">
+                <span>About</span>
+            </a>
+            <a class="nav_item" href="/#projects">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/projects.png">
+                <span>Projects</span>
+            </a>
+            <a class="nav_item" href="/#blog">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/blog.png">
+                <span>Blog</span>
+            </a>
+            <a class="nav_item" href="/#contact">
+                <img class="nav_item_img" src="https://m1l4n10.is-a.dev/images/m1l4n10githubio/contact.png">
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="section_home" id="Home">
+            <div class="hero_content">
+                <span class="HeroWelcome">Hey, its m1l4n10</span>
+                <ul class="hero_roles">
+                    <li>Website Developer</li>
+                    <li>specialized in HTML, CSS and JS</li>
+                    <li>Experienced in Raspberry Pi Server Hosting</li>
+                    <li>Experienced in GitHub</li>
+                    <li>Self taught</li>
+                    <li>still in school</li>
+                    <li>Instagram Reels addict</li>
+                    
+                    
+                </ul>
+                <div class="herobuttons">
+                    <button class="hero_button" onclick="window.location.href='https://m1l4n10.is-a.dev/linktree'">
+                    View my Socials
+                    <img class="hero_button_img" src="https://m1l4n10.is-a.dev/images/general/external_link_icon.webp">
+                    </button>
+                    <button class="hero_button" onclick="window.location.href='https://github.com/m1l4n10'">
+                    <img class="hero_button_img" src="https://m1l4n10.is-a.dev/images/general/github_icon.png">
+                    Github
+                    </button>
+                </div>
             </div>
+        </section>
+        <section class="section_about" id="about">
+            <div class="content">
+                <div class="hero_title">
+                    <span class="HeroWelcome">About Me</span>
+                </div>
+                <div class="about_content">
+                    <p>Hey, I'm m1l4n10, based in Germany. I started coding at 12 and never really stopped.</p>
+                    <p>What began as pure curiosity turned into a real passion for building things on the web. I specialize in web development, crafting websites and interfaces from scratch using HTML, CSS, and JavaScript — all alongside school.</p>
+                    <p>Thanks to the new possibilities from the is-a.dev community, which gives me a free domain to use, I have unlimited new opportunities for web development.</p>
+                    <p>I'm self-taught, active on GitHub, and always working on something new, whether it's a personal project or just experimenting with ideas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section_projects" id="projects">
+            <div class="content">
+                <div class="hero_title">
+                    <span class="HeroWelcomeExtra">My Projects</span>
+                </div>
+                <div class="projects_content">
+                    <div class="project_card">
+                        <a class="releasedate">11.04.2026</a>
+                        <div style="height: 2px;"class="placeholder"></div>
+                        <a class="projectheading">Mainpage - m1l4n10.is-a.dev</a>
+                        <div class="project_card_descripiton">
+                            <p>The page you are viewing right now. Blog function, fully worked out projects, etc.</p>
+                            <a>Active Developers: </a><a style="font-weight: bold;">M1l4n10</a><br>
+                            <a>Code languages: </a><a style="font-weight: bold;">HTML, CSS, JavaScript</a><br>
+                            <a>Lines of Code: </a><a style="font-weight: bold;">1.219</a><br>
+                            <div style="height: 5px;"></div>
+                            <a>(as of 30.04.2026 14:14)</a>
+                        </div>
+                        <br>
+                        <div class="project_buttons">
+                            <button class="hero_button_projects" onclick="window.location.href='https://github.com/m1l4n10/projects'">
+                            View Source Code
+                            <img class="hero_button_img_projects" src="https://m1l4n10.is-a.dev/images/general/github_icon.png">
+                            </button>
+                            <button class="hero_button_projects" onclick="window.location.href='/projects/'">
+                            <img class="hero_button_img_projects" src="https://m1l4n10.is-a.dev/images/general/external_link_icon.webp">
+                            View Project
+                            </button>
+                        </div>
+                    </div>
+                     <div class="project_card">
+                        <a class="releasedate">30.04.2026</a>
+                        <div style="height: 2px;"class="placeholder"></div>
+                        <a class="projectheading">Counter</a>
+                        <div class="project_card_descripiton">
+                            <p>Counter is a simple web application that allows users to set a timer to a specific day.</p>
+                            <a>Active Developers: </a><a style="font-weight: bold;">M1l4n10</a><br>
+                            <a>Code languages: </a><a style="font-weight: bold;">HTML, CSS, JavaScript</a><br>
+                            <a>Lines of Code: </a><a style="font-weight: bold;">503</a><br>
+                            <div style="height: 5px;"></div>
+                            <a>(as of 30.04.2026 14:14)</a>
+                        </div>
+                        <br>
+                        <div class="project_buttons">
+                            <button class="hero_button_projects" onclick="window.location.href='https://github.com/m1l4n10/projects/counter'">
+                            View Source Code
+                            <img class="hero_button_img_projects" src="https://m1l4n10.is-a.dev/images/general/github_icon.png">
+                            </button>
+                            <button class="hero_button_projects" onclick="window.location.href='/projects/#counter'">
+                            <img class="hero_button_img_projects" src="https://m1l4n10.is-a.dev/images/general/external_link_icon.webp">
+                            View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 20px;"></div>
+            <button style="margin-left: 10px;" class="hero_button" onclick="window.location.href='/projects/'">
+                <img class="hero_button_img" src="https://m1l4n10.is-a.dev/images/general/external_link_icon.webp">
+                View all Projects
+                </button>
+            </div>
+        </section>
+        <section class="section_blog" id="blog">
+            <div class="content">
+                <div class="hero_title">
+                    <span class="HeroWelcomeExtra">My Blog</span>
+                </div>
+                <div class="blog_content">
+                    <div class="blog">
+                        <a class="blog_date">30.04.2026</a>
+                        <div style="height: 5px;"></div>
+                        <a class="blog_heading">Introducing: Blogs!</a>
+                        <div style="height: 5px;"></div>
+                        <p>The new blog feature offers several advantages, such as a clearer overview of changes and features of this site.</p>
+                        <p>I don't know how often I'll write blog posts, but expect at least once a month.</p>
+                        <p>If you have questions / problems, take a look in the contact section.</p>
+                        <hr>
+                        <a class="blog_readmore" href="/blogs/#introducingblogs">Read More</a>
+                    </div>
+                    <div class="blog">
+                        <a class="blog_date">30.04.2026</a>
+                        <div style="height: 5px;"></div>
+                        <a class="blog_heading">Introducing: New Main Page!</a>
+                        <div style="height: 5px;"></div>
+                        <p>After almost three days of work and about 20 hours of coding, I'm excited to present the new site and its features.</p>
+                        <p>Blogs, full worked out project pages and finally an social Linktree.</p>
+                        <p>Check it out!</p>
+                        <hr>
+                        <a class="blog_readmore" href="/blogs/#introducingmainpage">Read More</a>
+                    </div>
+                </div>
+                <button class="hero_button_blog" onclick="window.location.href='/blogs/'">
+                <img class="hero_button_img_blog" src="https://m1l4n10.is-a.dev/images/general/external_link_icon.webp">
+                View all Blogs
+                </button>
+            </div>
+        </section>
+        <section class="section_contact" id="contact">
+            <div class="content">
+                <div class="hero_title">
+                    <span class="HeroWelcome">Contact Me</span>
+                </div>
+                <div class="contact_content">
+                    <p>If you want to contact me, feel free to reach out, BUT, please be patient as I may not respond immediately through school. Expect a waiting time of up to 72 hours.</p>
+                    <p>There are two ways to contact me. If you have a problem with the code of this site, please <a class="contact_a" href="https://github.com/m1l4n10/m1l4n10.github.io/issues">open an issue report on GitHub</a>.</p>
+                    <p>If you dont feel like it, you can also reach out through my discord.</p>
+                    <div style="height: 20px;"></div>
+                    <button class="hero_button" onclick="window.location.href='https://discord.com/users/1215682123219079259'">
+                    Discord
+                    <img class="hero_button_img" src="https://m1l4n10.is-a.dev/images/general/external_link_icon.webp">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="legal">
+            <a href="/legal/index.html#privacy">Privacy Policy</a>
+            <a href="/legal/index.html#terms">Terms of Use</a>
         </div>
-        <div class="mt-8 overflow-hidden">
-            <p class="text-gray-400 text-sm mb-2">
-                The page is currently being updated.
-            </p>
-            <p class="text-gray-400 text-sm">
-                In the meantime, feel free to stop by 
-                <a href="https://github.com/m1l4n10" target="_blank" class="text-gray-400 hover:underline transition-all">at my GitHub profile</a>.
-            </p>
+        <div class="else">
+            <a href="https://www.githubstatus.com/">Service Status</a>
+            <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Policy</a>
+            <a href="https://discord.com/users/1215682123219079259">Get Support</a>
         </div>
-    </div>
+        <br>
+        <p class="version">V1.0.0</p>
+        <p class="copyright">&copy; 2026 <a class="" href="https://github.com/m1l4n10">m1l4n10</a> / All rights reserved.</p>
+    </footer>
 </body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav_links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+
+    // NEU
+    document.querySelectorAll('#nav_links .nav_item').forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+        });
+    });
+</script>
 </html>
