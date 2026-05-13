@@ -39,20 +39,15 @@
     height: 20px;
     margin-right: 10px;
 }
-
-/* Desktop: mobile navbar verstecken */
 .navbar_mobile {
     display: none;
 }
 
-/* Mobile */
 @media (max-width: 800px) {
-    /* Desktop navbar verstecken */
     .navbar_desktop {
         display: none;
     }
 
-    /* Mobile navbar zeigen */
     .navbar_mobile {
         display: flex;
     }
